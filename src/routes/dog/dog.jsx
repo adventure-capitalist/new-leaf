@@ -5,13 +5,11 @@ import { useEffect, useState} from 'react';
 import {useParams} from "react-router-dom"
 
 export const Dog = () => {
-        const [dog, setDog] = useState()
+        const [dog, setDog] = useState({})
 
         const { id } = useParams();
     
         useEffect(() => {
-            console.log('id', id)
-
             const api = axios.create({
                 baseURL: process.env.REACT_APP_AIRTABLE_URL,
                 headers: {
@@ -22,7 +20,6 @@ export const Dog = () => {
               const getDog = async () => {
                 try {
                   let pup = await api.get(`${process.env.REACT_APP_AIRTABLE_URL}/${id}`);
-                  console.log('dog', pup.data);
                     setDog(pup.data)
                 } catch (error) {
                   console.log(error)
@@ -30,7 +27,7 @@ export const Dog = () => {
               };
             
             getDog()
-        }, [])
+        }, [id])
 	return (
         <>
             <div className="back"><a href="/dogs">Back</a></div>
