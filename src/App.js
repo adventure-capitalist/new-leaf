@@ -15,7 +15,7 @@ const routes = [
   {
     path: '/dogs',
     element: <Dogs />,
-    children: [{ path: '/:name', element: <Dog /> }],
+    children: [{ path: '/:id', element: <Dog /> }],
   },
   {
     path: '/resources',
@@ -36,7 +36,7 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-        <img className='logo' src='/images/logo.jpg'/>
+        <img alt='New Leaf Dog Rescue Logo' className='logo' src='/images/logo.jpg'/>
         <menu className='menu'>
           <a href='/'>Home</a>
           <span>•</span>

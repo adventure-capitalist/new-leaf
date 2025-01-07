@@ -1,11 +1,9 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import './dogs.css';
-import Dog from '../dog/dog';
 
 export const Dogs = () => {
 	const [dogsList, setDogsList] = useState()
-  const [clickedDog, setClickedDog] = useState()
 
 	useEffect(() => {
         const api = axios.create({
@@ -18,10 +16,9 @@ export const Dogs = () => {
           const getDogs = async () => {
             try {
               let dogs = await api.get(`${process.env.REACT_APP_AIRTABLE_URL}`);
-              console.log('all', dogs.data.records);
-              let adoptable = dogs.data.records.filter(dog => dog.fields.Status === 'Available')
-              console.log('adoptable', adoptable)
-              setDogsList(adoptable)
+              let adoptable = dogs.data.records.filter(dog => dog.fields.Status.includes('Available'));
+              let dataReady = adoptable.filter(dog => dog.fields.Story && dog.fields.Photos);
+              setDogsList(dataReady)
             } catch (error) {
               console.log(error)
             }
@@ -33,9 +30,9 @@ export const Dogs = () => {
 	return (
       <>
         {!dogsList && <div className='loading'><p>Fetching...</p><img src='/images/loading.gif' alt='loading'/></div>}
-          {!clickedDog && <div className="dogContainer">
+          {<div className="dogContainer">
               {dogsList && dogsList.map(dog => (
-                  <a className="card" href={`/dogs/${dog.fields.Name}`}> 
+                  <a key={dog.id} className="card" href={`/dogs/${dog.id}`}> 
                       {dog.fields.Photos && <div className={'images'} style={{'backgroundImage': `url(${dog.fields.Photos[0].url})`}}></div>}
                       <h2 className='name'>{dog.fields.Name}</h2>
                       <div className='dogInfo'>
@@ -47,7 +44,6 @@ export const Dogs = () => {
                   )
               )}
           </div>}
-        {clickedDog && <Dog dog={clickedDog}/>}
       </>
     )
 }

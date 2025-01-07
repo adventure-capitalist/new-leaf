@@ -7,9 +7,9 @@ export const Welcome = () => {
         <>
             <div className='mission'>
                     <div className='homepage-container'>
-                        <div className="home-image" style={{backgroundImage: `url('/images/shelter.jpg')`, borderRadius: '5px 0px 0px 5px'}}/>
+                        <img alt='woman at dog shelter surrounded by dogs' className="home-image" style={{backgroundImage: `url('/images/shelter.jpg')`, borderRadius: '5px 0px 0px 5px'}}/>
                         <div className='home-text'>
-                            <h2>Our mission</h2>
+                            <h2>Our Mission</h2>
                             <p> 
                                 We are a non-profit organisation with a small but dedicated team with the goal of matching loving homes with dogs in need. 
                                 Our dogs can travel to homes all over the UK and are deeply committed to both animal welfare and ensuring that this the homes we place dogs into are for life. 
@@ -35,7 +35,7 @@ export const Welcome = () => {
                             <div className='iconCircle'><FaInstagram className='social-icon' size={30} /></div>
                         </div>
                     </div>
-                    <img className="home-image" style={{backgroundImage: `url('/images/forest.jpg')`, borderRadius: '0px 5px 5px 0px'}}/>
+                    <img alt='woman and dogs walking in forest' className="home-image" style={{backgroundImage: `url('/images/forest.jpg')`, borderRadius: '0px 5px 5px 0px'}}/>
                 </div>
             </div>
         </>
