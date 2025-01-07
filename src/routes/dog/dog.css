@@ -1,0 +1,41 @@
+.back {
+    padding: 10px;
+    background-color: #c3e970;
+    border: 3px solid #014725;
+    color: #014725;
+    width: 90px;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.back a {
+    text-decoration: none;
+    color: #014725;
+    font-weight: 600;
+}
+
+.gallery {
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    padding: 0px 30px;
+}
+
+.galleryImage {
+    height: 300px;
+    width: 300px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.image-gallery {
+    width: 600px;
+}
+
+.dogStats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}

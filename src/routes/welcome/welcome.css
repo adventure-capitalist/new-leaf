@@ -1,0 +1,81 @@
+
+.cta-button {
+    background-color: #014725;
+    padding: 10px;
+    width: 200px;
+    margin: 35px auto;
+    border-radius: 10px;
+}
+
+
+
+.cta-button a {
+    text-decoration: none; 
+    color: white;
+    padding-bottom: 10px; 
+}
+
+.mission {
+    color: black;
+    width: 80%;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.mission p, .resources p{
+    width: auto;
+    padding: 0px 50px; 
+}
+
+.resources {
+    color: black;
+    padding-bottom: 20px;
+
+}
+
+.homepage-container {
+    display: flex;
+    margin: 30px 100px;
+    min-height: 400px;
+    background-color: white;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 0px 15px 0px dimgray;
+    border-radius: 5px;
+}
+
+.home-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 400px;
+    background-position: bottom;
+}
+
+.home-text {
+    margin: auto 0px;
+    padding: 20px;
+    width: 70%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
+.iconCircle {
+    background-color: #014725;
+    border-radius: 50%;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    margin: 0px 10px;
+}

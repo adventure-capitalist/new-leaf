@@ -1,0 +1,38 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.App {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    width: 100vw;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), 
+    url('../public/images/background.jpeg');
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+  }
+  
+  .logo {
+    height: 300px;
+    margin-top: 20px;
+    border: solid 8px #014725;
+    border-radius: 50%;
+  }
+
+  .menu {
+    display: flex;
+    width: 300px;
+    margin: auto;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: #014725;
+    font-weight: 600;
+  }
+
+  .menu a:hover {
+    text-decoration: underline;
+  }
