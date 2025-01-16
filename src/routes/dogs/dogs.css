@@ -12,6 +12,14 @@
     border: solid 5px #014725;
 }
 
+.cta-button {
+    background-color: #014725;
+    padding: 10px;
+    width: min(150px, 60vw);
+    margin: 35px auto;
+    border-radius: 10px;
+}
+
 .card p {
     margin: 5px;
 }
