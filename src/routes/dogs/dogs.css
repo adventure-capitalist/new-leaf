@@ -18,6 +18,7 @@
     width: min(150px, 60vw);
     margin: 35px auto;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .cta-button a {
