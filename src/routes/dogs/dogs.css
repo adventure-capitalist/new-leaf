@@ -20,6 +20,12 @@
     border-radius: 10px;
 }
 
+.cta-button a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 10px;
+}
+
 .card p {
     margin: 5px;
 }
