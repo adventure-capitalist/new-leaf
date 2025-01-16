@@ -14,7 +14,7 @@
   }
   
   .logo {
-    height: 300px;
+    height: min(300px, 90vw);
     margin-top: 20px;
     border: solid 8px #014725;
     border-radius: 50%;
@@ -22,7 +22,7 @@
 
   .menu {
     display: flex;
-    width: 300px;
+    width: min(300px, 90vw);
     margin: auto;
     justify-content: space-around;
     padding: 20px;
@@ -36,4 +36,13 @@
 
   .menu a:hover {
     text-decoration: underline;
+  }
+
+  @media(max-width: 250px){
+    .menu {
+      flex-direction: column;
+    }
+    .menu span {
+      display: none;
+    }
   }

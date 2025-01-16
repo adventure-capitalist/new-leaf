@@ -7,7 +7,7 @@ export const Welcome = () => {
         <>
             <div className='mission'>
                     <div className='homepage-container'>
-                        <img alt='woman at dog shelter surrounded by dogs' className="home-image" style={{backgroundImage: `url('/images/shelter.jpg')`, borderRadius: '5px 0px 0px 5px'}}/>
+                        <div className="home-image" style={{backgroundImage: `url('/images/shelter.jpg')`, borderRadius: '5px 0px 0px 5px', backgroundPosition: 'center'}}></div>
                         <div className='home-text'>
                             <h2>Our Mission</h2>
                             <p> 
@@ -31,11 +31,11 @@ export const Welcome = () => {
                         </p>
                         <div className='cta-button'><a href='/resources'>Find out more</a></div>
                         <div className='social-icons'>
-                            <div className='iconCircle'><FaFacebookF className='social-icon' size={30} /></div>
-                            <div className='iconCircle'><FaInstagram className='social-icon' size={30} /></div>
+                            <a href='https://www.facebook.com/profile.php?id=61570417581968'><div className='iconCircle'><FaFacebookF className='social-icon' size={30} /></div></a>
+                            <a href='https://www.instagram.com/newleafdogrescue'><div className='iconCircle'><FaInstagram className='social-icon' size={30} /></div></a>
                         </div>
                     </div>
-                    <img alt='woman and dogs walking in forest' className="home-image" style={{backgroundImage: `url('/images/forest.jpg')`, borderRadius: '0px 5px 5px 0px'}}/>
+                    <div className="home-image" style={{backgroundImage: `url('/images/forest.jpg')`, backgroundPosition: 'bottom', borderRadius: '0px 5px 5px 0px'}}></div>
                 </div>
             </div>
         </>

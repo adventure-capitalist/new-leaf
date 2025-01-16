@@ -2,7 +2,7 @@
 .cta-button {
     background-color: #014725;
     padding: 10px;
-    width: 200px;
+    width: min(200px, 60vw);
     margin: 35px auto;
     border-radius: 10px;
 }
@@ -50,7 +50,6 @@
     background-size: cover;
     height: auto;
     width: 400px;
-    background-position: bottom;
 }
 
 .home-text {
@@ -78,4 +77,29 @@
     height: 30px;
     width: 30px;
     margin: 0px 10px;
+}
+
+@media(max-width: 950px) {
+    .homepage-container {
+        flex-direction: column;
+    }
+    .home-image {
+        width: 100%;
+        height: 400px;
+    }
+
+    .home-text {
+        width: 100%;
+        padding: 20px 0px;
+    }
+}
+
+@media(max-width: 500px) {
+    .homepage-container {
+        margin: 30px;
+    }
+
+    .home-text {
+        padding: 20px 0px;
+    }
 }
