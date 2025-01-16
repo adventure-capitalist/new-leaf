@@ -63,9 +63,9 @@ export const Dog = () => {
                         </div>   
                     </div>
                     <div className="story">
-                      <h3>Story</h3>
+                      <h3>{fields.Name}'s Story</h3>
                         {fields.Story && <p>{fields.Story}</p>}
-                      <a href='/application'>Apply to adopt {fields.Name}</a>
+                      <button className="apply"><a href='/application'>Adopt me</a></button>
                     </div>
                 </div>
             }

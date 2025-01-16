@@ -40,6 +40,7 @@ export const Dogs = () => {
                           <p>Gender: {dog.fields.Gender}</p>
                           {dog.fields.Birthday && <p>Birthday: {new Date(dog.fields.Birthday).toLocaleDateString('en-GB', {month: 'short', day: 'numeric', year: 'numeric'})}</p>}
                       </div>
+                      <button>Read my tail</button>
                   </a>
                   )
               )}

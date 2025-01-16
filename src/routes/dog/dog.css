@@ -8,6 +8,20 @@
     margin-left: 50px;
 }
 
+.apply {
+    background-color: #014725;
+    padding: 10px;
+    width: min(200px, 60vw);
+    margin: 35px auto;
+    border-radius: 10px;
+}
+
+.apply a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 10px;
+}
+
 .back a {
     text-decoration: none;
     color: #014725;
