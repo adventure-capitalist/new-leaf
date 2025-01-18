@@ -8,6 +8,7 @@ export const Dogs = () => {
 	useEffect(() => {
         const api = axios.create({
             baseURL: process.env.REACT_APP_AIRTABLE_URL,
+            params: {sort: [{field: "Name"}], filterByFormula: "NOT({Story} = '')"},
             headers: {
               Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_API_KEY}`,
             }
@@ -33,12 +34,13 @@ export const Dogs = () => {
           {<div className="dogContainer">
               {dogsList && dogsList.map(dog => (
                   <a key={dog.id} className="card" href={`/dogs/${dog.id}`}> 
-                      {dog.fields.Photos && <div className={'images'} style={{'backgroundImage': `url(${dog.fields.Photos[0].url})`}}></div>}
-                      <h2 className='name'>{dog.fields.Name}</h2>
+                      {dog.fields.Photos && <div className={'image'} style={{'backgroundImage': `url(${dog.fields.Photos[0].url})`}}></div>}
+                      
                       <div className='dogInfo'>
-                          <p>Breed: {dog.fields.Breed}</p>
-                          <p>Gender: {dog.fields.Gender}</p>
-                          {dog.fields.Birthday && <p>Birthday: {new Date(dog.fields.Birthday).toLocaleDateString('en-GB', {month: 'short', day: 'numeric', year: 'numeric'})}</p>}
+                        <h2 className='name'>{dog.fields.Name}</h2>
+                          <p className='stat'>Breed: {dog.fields.Breed}</p>
+                          <p className='stat'>Gender: {dog.fields.Gender}</p>
+                          <p className='stat'>{dog.fields.Birthday ? 'Birthday: ' + new Date(dog.fields.Birthday).toLocaleDateString('en-GB', {month: 'short', day: 'numeric', year: 'numeric'}) : ' '}</p>
                       </div>
                       <button className='cta-button'>Read my tail</button>
                   </a>

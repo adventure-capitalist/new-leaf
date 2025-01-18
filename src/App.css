@@ -11,6 +11,7 @@
     background-size: 100% auto;
     background-repeat: repeat-y;
     min-height: 100vh;
+    font-family: 'Lato', sans-serif;
   }
   
   .logo {
