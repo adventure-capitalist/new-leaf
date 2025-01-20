@@ -67,6 +67,11 @@
 
 .age {
     text-align: left;
+    margin-bottom: 10px;
+}
+
+.ageList {
+    padding-inline-start: 20px;
 }
 
 @media(max-width: 950px) {
