@@ -52,14 +52,14 @@ export const Dog = () => {
                         }
                         <div className={'dogStats'}>
                             <h2>{fields.Name}</h2>
-                            <h3>{fields.Status}</h3>
-                            <p>Breed: {fields.Breed}</p>
-                            <p>Sex: {fields.Gender}</p>
-                            <p>Approx weight: {fields.kilograms} kg</p>
-                            <p>Birthday: {dog.fields.Birthday ? new Date(dog.fields.Birthday).toLocaleDateString('en-GB', {month: 'short', day: 'numeric', year: 'numeric'}) : ' '}</p>
-                            <p>Ok with cats: {fields.Cats}</p>
-                            <p>Ok with dogs: {fields.Dogs}</p>
-                            <p>Ok with kids these ages: 
+                            <h3 className='status'>{fields.Status}</h3>
+                            <p><b>Breed:</b> {fields.Breed}</p>
+                            <p><b>Sex:</b> {fields.Gender}</p>
+                            <p><b>Approx weight:</b> {fields.kilograms} kg</p>
+                            <p><b>Birthday:</b> {dog.fields.Birthday ? new Date(dog.fields.Birthday).toLocaleDateString('en-GB', {month: 'short', day: 'numeric', year: 'numeric'}) : ' '}</p>
+                            <p><b>Ok with cats:</b> {fields.Cats}</p>
+                            <p><b>Ok with dogs:</b> {fields.Dogs}</p>
+                            <p><b>Ok with kids these ages:</b> 
                                 <ul className='ageList'>{kids.length > 0 ? kids.map(item => <li className={'age'} key={item}>{item}</li>) : 'no'}</ul>
                             </p>
                         </div>   

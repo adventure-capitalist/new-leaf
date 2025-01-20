@@ -57,6 +57,16 @@
     margin: 10px 50px;
 }
 
+.status {
+    color: #014725;
+    margin-top: 0px;
+}
+
+.story h3 {
+    color: #014725;
+    margin-top: 0px;
+}
+
 .dogStats {
     display: flex;
     flex-direction: column;
@@ -64,7 +74,11 @@
     padding-left: 40px;
     width: 30%;
 }
-
+.dogStats p {
+    margin: 5px auto;
+    width: 100%;
+    text-align: left;
+}
 .age {
     text-align: left;
     margin-bottom: 10px;
@@ -82,6 +96,9 @@
     .dogStats {
         width: 100%;
         padding-left: 0px;
+    }
+    .dogStats p {
+        padding-left: 15px;
     }
     h2, h3 {
         width: 100%;
