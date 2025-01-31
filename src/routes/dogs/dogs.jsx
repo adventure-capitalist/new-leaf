@@ -7,7 +7,7 @@ export const Dogs = () => {
 
 	useEffect(() => {
         const api = axios.create({
-            baseURL: process.env.REACT_APP_AIRTABLE_URL,
+            baseURL: `${process.env.REACT_APP_AIRTABLE_URL}/Animals`,
             params: {sort: [{field: "Name"}], filterByFormula: "NOT({Story} = '')"},
             headers: {
               Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_API_KEY}`,
@@ -16,7 +16,7 @@ export const Dogs = () => {
         
           const getDogs = async () => {
             try {
-              let dogs = await api.get(`${process.env.REACT_APP_AIRTABLE_URL}`);
+              let dogs = await api.get(`${process.env.REACT_APP_AIRTABLE_URL}/Animals`);
               let adoptable = dogs.data.records.filter(dog => dog.fields.Status.includes('Available'));
               let dataReady = adoptable.filter(dog => dog.fields.Story && dog.fields.Photos);
               setDogsList(dataReady)

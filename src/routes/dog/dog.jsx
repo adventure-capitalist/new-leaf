@@ -11,7 +11,7 @@ export const Dog = () => {
 
     useEffect(() => {
         const api = axios.create({
-            baseURL: process.env.REACT_APP_AIRTABLE_URL,
+            baseURL: `${process.env.REACT_APP_AIRTABLE_URL}/Animals`,
             headers: {
                 Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_API_KEY}`,
             }
@@ -19,7 +19,7 @@ export const Dog = () => {
 
         const getDog = async () => {
             try {
-                let pup = await api.get(`${process.env.REACT_APP_AIRTABLE_URL}/${id}`);
+                let pup = await api.get(`${process.env.REACT_APP_AIRTABLE_URL}/Animals/${id}`);
                 setDog(pup.data)
             } catch (error) {
                 console.log(error)

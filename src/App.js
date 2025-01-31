@@ -1,6 +1,7 @@
 import Router from 'react-easy-router';
 import Dogs from './routes/dogs/dogs';
 import Dog from './routes/dog/dog';
+import Blog from './routes/blog/blog';
 import Welcome from './routes/welcome/welcome';
 import Resources from './routes/resources/resources';
 import Application from './routes/application/application';
@@ -20,6 +21,8 @@ const routes = [
   {
     path: '/resources',
     element: <Resources />,
+    children: [{ path: '/:id', element: <Blog /> }],
+
     
   },
   {

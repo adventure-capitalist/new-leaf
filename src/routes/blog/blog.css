@@ -1,0 +1,27 @@
+.back {
+    padding: 10px;
+    background-color: #c3e970;
+    border: 3px solid #014725;
+    color: #014725;
+    width: 90px;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.blogContainer {
+    margin: 40px 0px;
+    text-align: left;
+    padding: 20px;
+    background-color: white;
+    border: 3px solid #014725;
+    margin: 10px 50px;
+}
+
+@media(max-width: 950px) {
+    h2, h3 {
+        width: 100%;
+        text-align: center;
+        margin-block-end: 10px;
+        margin-block-start: 10px;
+    }
+}
