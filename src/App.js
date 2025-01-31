@@ -6,6 +6,8 @@ import Welcome from './routes/welcome/welcome';
 import Resources from './routes/resources/resources';
 import Application from './routes/application/application';
 import NotFound from './routes/not-found';
+import { FaFacebookF, FaInstagram  } from "react-icons/fa";
+
 import './App.css';
 
 const routes = [
@@ -49,6 +51,14 @@ function App() {
         </menu>
       </header>
       <Router routes={routes} />
+      <footer className='footer'>
+        <p>© 2025 New Leaf Dog Rescue</p>
+        <span style={{display: 'flex', flexDirection: 'row'}}>
+          <p>Follow us here:</p>
+          <a href='https://www.facebook.com/profile.php?id=61570417581968'  target="_blank" rel="noopener noreferrer"><div className='footerIcon'><FaFacebookF className='social-icon' size={15} /></div></a>
+          <a href='https://www.instagram.com/newleafdogrescue' target="_blank" rel="noopener noreferrer"><div className='footerIcon'><FaInstagram className='social-icon' size={15} /></div></a>
+        </span>
+      </footer>
     </div>
   )
 }

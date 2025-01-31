@@ -29,6 +29,29 @@
     padding: 20px;
   }
 
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #014725;
+  color: white;
+  height: 50px;
+  margin-top: 15px;
+}
+.footerIcon {
+  background-color: #014725;
+  height: 15px;
+  width: 15px;
+  padding-top: 10px;
+  margin: 10px;
+}
+
+.social-icon {
+  text-decoration: none;
+  color: white;
+  display: flex;
+}
+
   .menu a {
     text-decoration: none;
     color: #014725;
@@ -45,5 +68,12 @@
     }
     .menu span {
       display: none;
+    }
+  }
+
+  @media(max-width: 500px){
+    .footer {
+      flex-direction: column;
+      height: 100px;
     }
   }

@@ -31,8 +31,8 @@ export const Welcome = () => {
                         </p>
                         <div className='cta-button'><a href='/resources'>Find out more</a></div>
                         <div className='social-icons'>
-                            <a href='https://www.facebook.com/profile.php?id=61570417581968'><div className='iconCircle'><FaFacebookF className='social-icon' size={30} /></div></a>
-                            <a href='https://www.instagram.com/newleafdogrescue'><div className='iconCircle'><FaInstagram className='social-icon' size={30} /></div></a>
+                            <a href='https://www.facebook.com/profile.php?id=61570417581968' target="_blank" rel="noopener noreferrer" ><div className='iconCircle'><FaFacebookF className='social-icon' size={30} /></div></a>
+                            <a href='https://www.instagram.com/newleafdogrescue'  target="_blank" rel="noopener noreferrer" ><div className='iconCircle'><FaInstagram className='social-icon' size={30} /></div></a>
                         </div>
                     </div>
                     <div className="home-image" style={{backgroundImage: `url('/images/forest.jpg')`, backgroundPosition: 'bottom', borderRadius: '0px 5px 5px 0px'}}></div>
