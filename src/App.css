@@ -5,7 +5,10 @@
     flex-direction: column;
     text-align: center;
     height: 100%;
-    width: 100vw;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
     background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), 
     url('../public/images/background.jpeg');
     background-size: 100% auto;
