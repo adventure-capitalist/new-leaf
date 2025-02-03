@@ -38,13 +38,13 @@ export const Blog = () => {
                 <div className="blogContainer">
                     <meta name="description" content={fields.Description} />
                     <h1>{fields.Title}</h1>
-                    <img src={fields.Hero_Image[0].url} alt="" />
+                    <img style ={{width: "100%"}} src={fields.Hero_Image[0].url} alt="" />
                     <Markdown>{fields.Paragraph_1}</Markdown>
-                    <img src={fields.Image_1} alt="" />
+                    <img style ={{width: "100%"}} src={fields.Image_1} alt="" />
                     <Markdown>{fields.Paragraph_2}</Markdown>
-                    <img src={fields.Image_2} alt="" />
+                    <img style ={{width: "100%"}}  src={fields.Image_2} alt="" />
                     <Markdown>{fields.Paragraph_3}</Markdown>
-                    <img src={fields.Image_3} alt="" />
+                    <img style ={{width: "100%"}} src={fields.Image_3} alt="" />
                 </div>
             }
         </>
