@@ -38,7 +38,7 @@
   align-items: center;
   background-color: #014725;
   color: white;
-  height: 50px;
+  height: 80px;
   margin-top: 15px;
 }
 .footerIcon {
@@ -77,6 +77,6 @@
   @media(max-width: 500px){
     .footer {
       flex-direction: column;
-      height: 100px;
+      height: 150px;
     }
   }

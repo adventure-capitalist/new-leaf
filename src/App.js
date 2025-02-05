@@ -6,6 +6,7 @@ import Welcome from './routes/welcome/welcome';
 import Resources from './routes/resources/resources';
 import Application from './routes/application/application';
 import NotFound from './routes/not-found';
+import Privacy from './routes/privacy';
 import { FaFacebookF, FaInstagram  } from "react-icons/fa";
 
 import './App.css';
@@ -34,6 +35,10 @@ const routes = [
   {
     path: '/application',
     element: <Application />,
+  },
+  {
+    path: '/privacy',
+    element: <Privacy />,
   }
 ];
 
@@ -52,7 +57,10 @@ function App() {
       </header>
       <Router routes={routes} />
       <footer className='footer'>
-        <p>© 2025 New Leaf Dog Rescue</p>
+        <span style={{textAlign: "left"}}>
+          <p>© 2025 New Leaf Dog Rescue</p>
+          <a style={{color: "white", textDecoration: "none"}}href='/privacy'>Privacy policy</a>
+        </span>
         <span style={{display: 'flex', flexDirection: 'row'}}>
           <p>Follow us here:</p>
           <a href='https://www.facebook.com/profile.php?id=61570417581968'  target="_blank" rel="noopener noreferrer"><div className='footerIcon'><FaFacebookF className='social-icon' size={15} /></div></a>
