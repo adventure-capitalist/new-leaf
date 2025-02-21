@@ -37,10 +37,16 @@ export const Blog = () => {
             {fields && 
                 <div className="blogContainer">
                     <meta name="description" content={fields.Description} />
-                    <h1>{fields.Title}</h1>
                    {fields.Hero_Image && <img className="blogImage" src={fields.Hero_Image[0].url} alt="" />}
+                   <h1>{fields.Title}</h1>
                     <Markdown>{fields.Paragraph_1}</Markdown>
-                    {fields.Image_1 && <img className="blogImage" src={fields.Image_1[0].url} alt="" />}
+                    {fields.Image_1 && fields.Image_1[0].type !== "video/mp4" &&
+                    <img className="blogImage" src={fields.Image_1[0].url} alt="" />}
+                    {fields.Image_1 && fields.Image_1[0].type === 'video/mp4' && 
+                    <div className="videoWrapper">
+                    <iframe className="video" width="560" height="315" src="https://www.youtube.com/embed/66GomSfqGk4?si=Sn-lOOfA9UT5G6MT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    }
                     <Markdown>{fields.Paragraph_2}</Markdown>
                     {fields.Image_2 && <img className="blogImage"  src={fields.Image_2[0].url} alt="" />}
                     <Markdown>{fields.Paragraph_3}</Markdown>

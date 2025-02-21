@@ -39,14 +39,14 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    width: 100vw;
+    width: 100%;
     flex-direction: row;
 }
 
 .allDogsHeader {
     color: black;
     text-align: center;
-    width: 100vw;
+    width: 100%;
 }
 
 .image {

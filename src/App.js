@@ -55,7 +55,9 @@ function App() {
           <a href='/resources'>Resources</a>
         </menu>
       </header>
+      <div className="content">
       <Router routes={routes} />
+      </div>
       <footer className='footer'>
         <span style={{textAlign: "left"}}>
           <p>© 2025 New Leaf Dog Rescue</p>

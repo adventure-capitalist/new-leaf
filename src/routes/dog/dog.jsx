@@ -62,12 +62,36 @@ export const Dog = () => {
                             <p><b>Ok with kids these ages:</b> 
                                 <ul className='ageList'>{kids.length > 0 ? kids.map(item => <li className={'age'} key={item}>{item}</li>) : 'no'}</ul>
                             </p>
+                            <div className="healthChecks">
+                            <p><b>Fully vaccinated against:</b>
+                                <ul>
+                                    <li>Distemper</li>
+                                    <li>Hepatitis</li>
+                                    <li>Parainfluenza</li>
+                                    <li>Leptospirosis</li>
+                                    <li>Parvo</li>
+                                    <li>Rabies</li>
+                                    
+
+                                </ul>
+                            </p>
+                            <p><b>Tested negative for:</b>
+                                <ul>
+                                    <li>Heartworms</li>
+                                    <li>Anaplasmosis</li>
+                                    <li>Lyme disease</li>
+                                    <li>Ehrlichiosis</li>
+                                    <li>Brucellosis</li>
+                                    <li>Leishmaniasis</li>
+                                </ul>
+                            </p>
+                            </div>
+                            <div className="story">
+                                <h3>{fields.Name}'s Story</h3>
+                                {fields.Story && <p>{fields.Story}</p>}
+                                <button className="apply"><a href='/application'>Adopt me</a></button>
+                            </div>
                         </div>   
-                    </div>
-                    <div className="story">
-                      <h3>{fields.Name}'s Story</h3>
-                        {fields.Story && <p>{fields.Story}</p>}
-                      <button className="apply"><a href='/application'>Adopt me</a></button>
                     </div>
                 </div>
             }

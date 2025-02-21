@@ -31,20 +31,20 @@ export const Resources = () => {
         {!blogsList && <div className='loading'><p>Fetching...</p><img src='/images/loading.gif' alt='loading'/></div>}
           { <>
             <div className="blogsContainer">
+              <a href='/application' target='_blank' rel="noopener noreferrer" className='resourcesCard'>
+                  <div className={'image'} style={{'backgroundImage': `url(/images/application.jpg)`}}></div>
+                  <div className='blogInfo'>
+                        <span className='name'>Apply for one of our dogs</span>
+                        <span className='description'>Submit your application and we will arrange a homecheck</span>
+                        <button className='cta-button'>Forever starts now</button>
+                  </div>
+                </a>
                 <a href="https://www.paws-hope.com/mia-s-dogs" target='_blank' rel="noopener noreferrer" className='resourcesCard'>
                   <div className={'image'} style={{'backgroundImage': `url(/images/eating.png)`}}></div>
                   <div className='blogInfo'>
                         <span className='name'>Donate Food to the Shelter</span>
                         <span className='description'>The best way to support our shelters is to sponsor bags of food</span>
                         <button className='cta-button'>Food glorious food</button>
-                  </div>
-                </a>
-                <a href='/application' target='_blank' rel="noopener noreferrer" className='resourcesCard'>
-                  <div className={'image'} style={{'backgroundImage': `url(/images/application.jpg)`}}></div>
-                  <div className='blogInfo'>
-                        <span className='name'>Apply for one of our dogs</span>
-                        <span className='description'>Submit your application and we will arrange a homecheck</span>
-                        <button className='cta-button'>Forever starts now</button>
                   </div>
                 </a>
                 <a href="https://www.thedogspointofview.com/find-a-romanian-rescue-trainer-map" target='_blank' rel="noopener noreferrer" className='resourcesCard'>
@@ -57,7 +57,7 @@ export const Resources = () => {
                 </a>
             </div>
           
-             <h2 style={{width: "100vw"}}>Blogs</h2>
+             <h2 style={{width: "100%", margin: "40px 0px"}}>Blogs</h2>
 
              <div className="blogsContainer">
               {blogsList && blogsList.map(blog => (
