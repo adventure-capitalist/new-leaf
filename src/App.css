@@ -10,7 +10,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), 
-    url('../public/images/background.jpeg');
+    url('../public/images/background.png');
     background-size: 100% auto;
     background-repeat: repeat-y;
     min-height: 100vh;

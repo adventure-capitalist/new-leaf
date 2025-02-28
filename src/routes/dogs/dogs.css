@@ -9,7 +9,7 @@
     cursor: pointer;
     height: 550px;
     border-radius: 8px;
-    border: solid 5px #014725;
+    box-shadow: 0 0 15px 0 dimgray;
 }
 
 .cta-button {
@@ -55,6 +55,7 @@
     width: min(300px, 90vw);
     background-position: center;
     background-size: cover;
+    border-radius: 8px 8px 0 0; 
     background-repeat: no-repeat;
 }
 

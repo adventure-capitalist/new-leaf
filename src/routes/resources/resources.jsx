@@ -34,25 +34,25 @@ export const Resources = () => {
               <a href='/application' target='_blank' rel="noopener noreferrer" className='resourcesCard'>
                   <div className={'image'} style={{'backgroundImage': `url(/images/application.jpg)`}}></div>
                   <div className='blogInfo'>
-                        <span className='name'>Apply for one of our dogs</span>
+                        <span className='title'>Apply for one of our dogs</span>
                         <span className='description'>Submit your application and we will arrange a homecheck</span>
-                        <button className='cta-button'>Forever starts now</button>
+                        <button className='blog-cta-button'>Forever starts now</button>
                   </div>
                 </a>
                 <a href="https://www.paws-hope.com/mia-s-dogs" target='_blank' rel="noopener noreferrer" className='resourcesCard'>
                   <div className={'image'} style={{'backgroundImage': `url(/images/eating.png)`}}></div>
                   <div className='blogInfo'>
-                        <span className='name'>Donate Food to the Shelter</span>
+                        <span className='title'>Donate Food to the Shelter</span>
                         <span className='description'>The best way to support our shelters is to sponsor bags of food</span>
-                        <button className='cta-button'>Food glorious food</button>
+                        <button className='blog-cta-button'>Food glorious food</button>
                   </div>
                 </a>
                 <a href="https://www.thedogspointofview.com/find-a-romanian-rescue-trainer-map" target='_blank' rel="noopener noreferrer" className='resourcesCard'>
                   <div className={'image'} style={{'backgroundImage': `url(/images/DogsPointOfView.png)`}}></div>
                   <div className='blogInfo'>
-                        <span className='name'>Romanian Rescue Training Advice</span>
+                        <span className='title'>Romanian Rescue Training Advice</span>
                         <span className='description'>The Dog's POV is a helpful network of Romanian dog experts</span>
-                        <button className='cta-button'>Find out more</button>
+                        <button className='blog-cta-button'>Find out more</button>
                   </div>
                 </a>
             </div>
@@ -65,9 +65,9 @@ export const Resources = () => {
                       {blog.fields.Hero_Image && <div className={'image'} style={{'backgroundImage': `url(${blog.fields.Hero_Image[0].url})`}}></div>}
                       
                       <div className='blogInfo'>
-                        <span className='name'>{blog.fields.Title}</span>
+                        <span className='title'>{blog.fields.Title}</span>
                         <span className='description'>{blog.fields.Description}</span>
-                        <button className='cta-button'>Read more</button>
+                        <button className='blog-cta-button'>Read more</button>
                       </div>
                   </a>
                   )

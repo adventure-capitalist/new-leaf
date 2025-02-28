@@ -37,8 +37,8 @@ export const Blog = () => {
             {fields && 
                 <div className="blogContainer">
                     <meta name="description" content={fields.Description} />
-                   {fields.Hero_Image && <img className="blogImage" src={fields.Hero_Image[0].url} alt="" />}
                    <h1>{fields.Title}</h1>
+                   {fields.Hero_Image && <img className="blogImage" src={fields.Hero_Image[0].url} alt="" />}
                     <Markdown>{fields.Paragraph_1}</Markdown>
                     {fields.Image_1 && fields.Image_1[0].type !== "video/mp4" &&
                     <img className="blogImage" src={fields.Image_1[0].url} alt="" />}
