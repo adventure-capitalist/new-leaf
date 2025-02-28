@@ -18,7 +18,7 @@
   }
   
   .logo {
-    height: min(300px, 90vw);
+    height: min(250px, 90vw);
     margin-top: 20px;
     border: solid 8px #014725;
     border-radius: 50%;
