@@ -22,6 +22,62 @@
     cursor: pointer;
 }
 
+.filterContainer {
+    width: 85vw;
+    padding: 0px 10px;
+    border-radius: 15px;
+    border: solid 2px #014725;
+    background-color: white;
+}
+
+.filter-button {
+    background-color: #014725;
+    color: white;
+    padding: 10px;
+    width: min(auto, 60vw);
+    margin: 10px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.filter-button-active {
+    background-color: #c3e970;
+    color: #014725;
+    padding: 10px;
+    width: min(auto, 60vw);
+    margin: 10px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 802px) {
+    .filterContainer {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .filter-button, .filter-button-active{
+        width: 100%;
+        margin: 0px auto;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 802px) {
+	.filter-buttons {
+		display: none;
+	}
+
+	.filterContainer .filter-buttons {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+        margin: 0px auto 10px auto;
+	}
+}
+
 .stat {
     margin: 5px auto;
     height: 21px;
@@ -79,3 +135,20 @@
 .loading p {
     font-size: 24px;
 }
+
+.filter-toggle {
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.filter-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.filterContainer p {
+    display: flex;
+    justify-content: space-between;
+}
+
