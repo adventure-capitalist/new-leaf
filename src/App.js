@@ -49,9 +49,9 @@ function App() {
         <img alt='New Leaf Dog Rescue Logo' className='logo' src='/images/logo.jpg'/>
         <menu className='menu'>
           <a href='/'>Home</a>
-          <span>•</span>
+          <img alt='leaf' className='leaf' src='/images/leaf.png'/>
           <a href='/dogs'>Adoptable dogs</a>
-          <span>•</span>
+          <img alt='leaf' className='leaf' src='/images/leaf.png'/>
           <a href='/resources'>Resources</a>
         </menu>
       </header>

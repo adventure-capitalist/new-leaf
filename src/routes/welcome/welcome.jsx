@@ -11,7 +11,8 @@ export const Welcome = () => {
                         <div className='home-text'>
                             <h2>Our Mission</h2>
                             <p> 
-                                We are a non-profit organisation with a small but dedicated team with the goal of matching loving homes with dogs in need. 
+                                We are a non-profit organisation with a small dedicated team that matches loving homes with dogs in need. 
+                                <br/> <br/>
                                 Our dogs can travel to homes all over the UK and are deeply committed to both animal welfare and ensuring that this the homes we place dogs into are for life. 
                                 We believe that every dog big or small deserves a second chance at a life where they are truly loved and special and we work tirelessly to make that happen. 
                                 If you believe there is room in your home and your heart for one of our special dogs, feel free to learn about each of them below.
@@ -26,7 +27,7 @@ export const Welcome = () => {
                     <div className='home-text'>
                         <h2>Resources</h2>
                         <p> 
-                            The road to making a rescue dog a part of your family can be a long and windy one. We never want you to feel like you have to travel it alone.
+                            The road to making a rescue dog a part of your family can be a long and windy one.  <br/> <br/>We never want you to feel like you have to travel it alone.
                             We offer individual support for helping your dog transition into their new homes as smoothly as possible. And to get you both off to the best start we have put together a list of resources.
                         </p>
                         <div className='cta-button'><a href='/resources'>Find out more</a></div>

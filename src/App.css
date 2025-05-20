@@ -16,7 +16,10 @@
     min-height: 100vh;
     font-family: 'Lato', sans-serif;
   }
-  
+  .leaf {
+    height: 18px;
+    width: 18px;
+  }
   .logo {
     height: min(250px, 90vw);
     margin-top: 20px;

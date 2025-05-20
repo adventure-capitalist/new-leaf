@@ -40,7 +40,7 @@ export const Dogs = () => {
 	return (
 		<>
 			{!dogsList && <div className='loading'><p>Fetching...</p><img src='/images/loading.gif' alt='loading'/></div>}
-			<div className="dogContainer">
+			{dogsList &&<div className="dogContainer">
 				<div className="filterContainer">
 					<p onClick={() => setIsFilterVisible(!isFilterVisible)} className="filter-toggle">
 						I am looking for a dog that is...{' '}<FaChevronDown />
@@ -86,6 +86,7 @@ export const Dogs = () => {
 					)
 				)}
 			</div>
+			}
 		</>
 	);
 };
