@@ -15,7 +15,7 @@ export const Welcome = () => {
                                 <br/> <br/>
                                 Our dogs can travel to homes all over the UK and are deeply committed to both animal welfare and ensuring that this the homes we place dogs into are for life. 
                                 We believe that every dog big or small deserves a second chance at a life where they are truly loved and special and we work tirelessly to make that happen. 
-                                If you believe there is room in your home and your heart for one of our special dogs, feel free to learn about each of them below.
+                                If you believe there is room in your home and heart for one of our special dogs, feel free to learn about each of them below.
                             </p>
                             <div className='cta-button'><a href='/dogs'>Meet the dogs</a></div>
                         </div>
