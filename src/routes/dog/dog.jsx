@@ -62,7 +62,7 @@ export const Dog = () => {
                             <p><b>Ok with kids these ages:</b> 
                                 <ul className='ageList'>{kids.length > 0 ? kids.map(item => <li className={'age'} key={item}>{item}</li>) : 'no'}</ul>
                             </p>
-                            <div className="healthChecks">
+                            {fields.Rescuer !== "Domestic" && <div className="healthChecks">
                             <p><b>Fully vaccinated against:</b>
                                 <ul>
                                     <li>Distemper</li>
@@ -85,7 +85,7 @@ export const Dog = () => {
                                     <li>Leishmaniasis</li>
                                 </ul>
                             </p>
-                            </div>
+                            </div>}
                             <div className="story">
                                 <h3>{fields.Name}'s Story</h3>
                                 {fields.Story && <p>{fields.Story}</p>}
